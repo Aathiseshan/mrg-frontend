@@ -43,7 +43,7 @@ export default function MarriageForm() {
       localStorage.setItem("marriageForms", JSON.stringify(updated));
 
       // 2️⃣ Send to backend API for email
-      const response = await fetch("http://https://mrg-backend-qotd.onrender.com/api/form", {
+      const response = await fetch("https://mrg-backend-qotd.onrender.com/api/form", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(values),
